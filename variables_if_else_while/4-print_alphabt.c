@@ -8,7 +8,7 @@
 int main(void)
 {
 	/* local variable definition */
-	int n = 'a';
+	char n = 'a';
 	/* do loop execution */
 	do {
 		if (n == 'q')
@@ -24,8 +24,6 @@ int main(void)
 		}
 		putchar(n);
 		n++;
-	}
-	
-	while (n <= 'z');
+	}while (n <= 'z');
 	return (0);
-} /* Betty does the most some times */
+}
