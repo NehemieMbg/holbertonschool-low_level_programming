@@ -7,23 +7,16 @@
  */
 int main(void)
 {
-	/* local variable definition */
-	char n = 'a';
-	/* do loop execution */
-	do {
-		if (n == 'q')
+	char ch = 'a';
+
+	while (ch <= 'z')
+	{
+		if (ch != 'e' && ch != 'q')
 		{
-			/* skip the iteration */
-			n++;
-			continue;
+			putchar(ch);
 		}
-		else if (n == 'e')
-		{
-			n++;
-			continue;
-		}
-		putchar(n);
-		n++;
-	}while (n <= 'z');
+		ch++;
+	}
+	putchar('\n');
 	return (0);
 }
