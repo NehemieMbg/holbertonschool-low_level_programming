@@ -3,7 +3,7 @@
 #include <time.h>
 
 /**
- *main - assign random number to the variables n each time it's executed
+ *main - assign random number to the variables n each time it's 
  *return: Always 0 (Success)
  */
 
