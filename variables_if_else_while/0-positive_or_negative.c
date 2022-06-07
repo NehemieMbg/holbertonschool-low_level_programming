@@ -4,7 +4,8 @@
 
 /**
  *main - assign random number to the variables n each time it's expetcted
- *return: Always 0 (Success)
+ *
+ return: Always 0 (Success)
  */
 
 int main(void)
