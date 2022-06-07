@@ -7,7 +7,6 @@
  *
  Return: Always 0 if succeeded
  */
-
 int main(void)
 {
 	int n;
