@@ -14,9 +14,9 @@ void puts_half(char *str)
 	{
 		;
 	}
-	/* split the variable len in half */
+	/* split a string in half */
 	len1 = len / 2;
-	/* prints the second half of the variable */
+	/* prints the second half of a string */
 	while (str[len1] != '\0')
 	{
 		_putchar(str[len1]);
