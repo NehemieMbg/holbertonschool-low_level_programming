@@ -14,6 +14,7 @@ void puts_half(char *str)
 	{
 		;
 	}
+	len = len + 1;
 	/* split a string in the half */
 	len1 = len / 2;
 	/* prints the second half of a string */
