@@ -2,13 +2,19 @@
 #include <string.h>
 
 /**
- * *_strcat - concanates two strings.
- * @dest: The final destination which will retur the result
- * @src: The source of other string
+ * _puts_recursion - prints a string followed by a new line
+ * @s: the string to print
+ * Return
  *
- * Return: the pointer to dest
  */
 void _puts_recursion(char *s)
 {
-	
+	if (*s == '\0')
+	{
+		_putchar('\n');
+	return;
+	}
+	_putchar(*s);
+	_puts_recursion(s + 1);
+
 }
