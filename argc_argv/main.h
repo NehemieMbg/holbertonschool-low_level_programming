@@ -16,3 +16,4 @@ char *_strstr(char *haystack, char *needle);
 void print_chessboard(char (*a)[8]);
 void print_diagsums(int *a, int size);
 int main(int argc __attribute__((unused)), char *argv[]);
+int main(int argc, char *argv[]__attribute__((unused)));
