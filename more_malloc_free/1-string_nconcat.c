@@ -41,10 +41,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (i = 0; s1[i] != '\0'; i++)
 		dest[i] = s1[i];
 
-	/*if (n >= _strlen(s2))
-		return (s2);*/
+	if (n >= _strlen(s2))
+		return (s2);
 
-	/*if (n < _strlen(s2))*/
+	if (n < _strlen(s2))
 	for (j = 0; j < n; j++)
 		dest[i + j] = s2[j];
 
