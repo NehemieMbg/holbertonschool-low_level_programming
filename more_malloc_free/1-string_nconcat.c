@@ -35,14 +35,15 @@ unsigned int _strlen(char *s)
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *dest;
-	unsigned int i, j;
+	unsigned int i = 0, j = 0;
 
 	dest = malloc(sizeof(char) * ((_strlen(s1) + _strlen(s2) + 1)));
 	if (dest == NULL)
 		return (NULL);
 
-	for (i = 0; s1[i] != '\0'; i++)
-		dest[i] = s1[i];
+	if (s1)
+		for (i = 0; s1[i] != '\0'; i++)
+			dest[i] = s1[i];
 
 	if (s2)
 		for (j = 0; j < n && s2[j] != '\0'; j++)
