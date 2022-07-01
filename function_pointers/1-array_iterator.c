@@ -6,6 +6,7 @@
  * array_iterator - Executes a function given as a paramater
  * @array: is the string to print
  * @action: is the pointed functions
+ * @size: is the size of the array
  *
  */
 
