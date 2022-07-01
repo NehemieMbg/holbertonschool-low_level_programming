@@ -5,7 +5,7 @@
 /**
  * array_iterator - Executes a function given as a paramater
  * @array: is the string to print
- * @action: is the pointed function
+ * @action: is the pointed functions
  *
  */
 
