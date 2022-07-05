@@ -36,8 +36,6 @@ void _print_s(va_list lst)
 	if (i)
 		printf("%s", i);
 
-	else
-		printf("(nil)");
 }
 
 /**
