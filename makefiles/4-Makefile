@@ -2,7 +2,7 @@ CC : gcc
 SRC : mains.c school.c
 OBJ : $(SRC:.c=.o)
 NAME : school
-RM : rm -rf
+RM : rm -f
 CFLAGS : -Wall -Werror -Wextra -pedantic
 
 all : $(OBJ)
@@ -16,4 +16,4 @@ oclean :
 
 fclean :clean oclean
 
-re : oclean all
+re : oclean
