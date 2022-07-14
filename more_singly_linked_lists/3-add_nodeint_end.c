@@ -24,6 +24,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	/*since new is the last node it point to NULL to end the list*/
 	new->next = NULL;
 
+	/*if head is the end of the list it'll give a new end that is new*/
 	if (*head == NULL)
 	{
 		*head = new;
