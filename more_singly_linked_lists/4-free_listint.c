@@ -16,10 +16,9 @@ void free_listint(listint_t *head)
 	listint_t *tmp;
 
 	/*creating a loop that gonna free the rest of the list*/
-	while (head == NULL)
+	while (head)
 	{
 		tmp = head->next;
-		free(head->next);
 		free(head);
 		head = tmp;
 	}
