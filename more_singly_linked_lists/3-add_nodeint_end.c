@@ -11,14 +11,17 @@
 
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-	listint_t *temp = *head; /*declaring a new pointer while giving the data from head to temp*/
-	listint_t *new = malloc(sizeof(listint_t)); /*declaring a new pointer while allocating memory*/
+	listint_t *temp = *head; /*declaring a new pointer while
+	giving the data from head to temp*/
+	listint_t *new = malloc(sizeof(listint_t)); /*declaring a new pointe
+	while allocating memory*/
 
 	if (!new) /*if new fails it'll return NULL*/
 		return (NULL);
 
 	new->n = n; /*giving the data of n to new*/
-	new->next = NULL; /*since new is the last node it point to NULL to end the list*/
+	new->next = NULL; /*since new is the last
+	node it point to NULL to end the list*/
 
 	if (*head == NULL)
 	{
@@ -29,7 +32,8 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	while (temp->next)
 		temp = temp->next;
 	
-	temp->next = new; /* since new is NULL we are assaigning to temp so is the end of the node*/
+	temp->next = new; /* since new is NULL we are
+	assaigning to temp so is the end of the node*/
 
 	return (new);
 }
