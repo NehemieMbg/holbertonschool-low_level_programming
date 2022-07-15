@@ -11,9 +11,10 @@ int pop_listint(listint_t **head)
 {
 	/*creating a temp pointer that going to remplace head*/
 	listint_t *temp;
+	int num;
 
 	/*head doesn't exit it'll return 0*/
-	if (!*head)
+	if (!head || !*head)
 		return (0);
 
 	/**
@@ -29,6 +30,7 @@ int pop_listint(listint_t **head)
 	 */
 	if (*head && (*head)->next)
 	{
+		num = (*head)->n;
 		temp = *head;
 		*head = (*head)->next;
 		free(temp);
