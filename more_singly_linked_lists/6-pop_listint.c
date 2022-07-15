@@ -28,7 +28,7 @@ int pop_listint(listint_t **head)
 	 * so we are returning the data from n and to acces it we need to
 	 * point n with the pointer head
 	 */
-	if (*head && (*head)->next)
+	if (*head)
 	{
 		num = (*head)->n;
 		temp = *head;
