@@ -25,7 +25,7 @@ int pop_listint(listint_t **head)
 	 * We are freeing temp.
 	 * Since the funciton is not a void we have to return something
 	 * so we are returning the data from n and to acces it we need to
-	 * point n with the pointer temp
+	 * point n with the pointer head
 	 */
 	if (*head && (*head)->next)
 	{
@@ -33,5 +33,5 @@ int pop_listint(listint_t **head)
 		*head = (*head)->next;
 		free(temp);
 	}
-	return (temp->n);
+	return ((*head)->n);
 }
