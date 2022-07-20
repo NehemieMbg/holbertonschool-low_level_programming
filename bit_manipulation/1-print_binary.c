@@ -10,7 +10,7 @@
 void print_binary(unsigned long int decimalNo)
 {
 	int status = 0;
-	unsigned int mask = 32768;
+	unsigned int mask = 65536;
 
 	if (decimalNo == 0)
 		_putchar('0');
