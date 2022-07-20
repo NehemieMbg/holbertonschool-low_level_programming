@@ -13,9 +13,9 @@
 int get_bit(unsigned long int number, unsigned int index)
 {
 	int bit_value;
-	
-	if (!index)
-		return (0);
+
+	if (index > 31)
+		return (-1);
 
 	bit_value = (number >> index) & 1;
 
