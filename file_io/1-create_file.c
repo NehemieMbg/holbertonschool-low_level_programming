@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * @brief Create a file object
- * 
- * @param filename 
- * @param text_content 
- * @return int 
+ * create_file - is a function that create files
+ * @filename: is the pointer to the file
+ * @text_content: is the content of the file
+ *
+ * Return: 1 if succeded & -1 if not
  */
 
 int create_file(const char *filename, char *text_content)
