@@ -28,6 +28,12 @@ void hash_table_delete(hash_table_t *ht)
 						free(temp->value);
 					}
 				}
+				newNode = ht->array[i];
+				// if (newNode->key && newNode->value)
+				// {
+				// 	free(newNode->key);
+				// 	free(newNode->value);
+				// }
 			}
 		free(newNode);
 		}
