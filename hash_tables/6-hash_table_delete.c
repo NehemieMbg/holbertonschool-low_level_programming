@@ -29,11 +29,11 @@ void hash_table_delete(hash_table_t *ht)
 					}
 				}
 				newNode = ht->array[i];
-				// if (newNode->key && newNode->value)
-				// {
-				// 	free(newNode->key);
-				// 	free(newNode->value);
-				// }
+				if (newNode->key && newNode->value)
+				{
+					free(newNode->key);
+					free(newNode->value);
+				}
 			}
 		free(newNode);
 		}
