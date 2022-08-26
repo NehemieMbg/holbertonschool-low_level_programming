@@ -26,6 +26,7 @@ void print(int *array, size_t left, size_t right)
  * which start at the previous middle
  * @left: is the beginning of the array or the new beginning
  * which start at the previous middle
+ * Return: the result
  */
 int binarySearch(int *array, int value, size_t left, size_t right)
 {
@@ -52,6 +53,7 @@ int binarySearch(int *array, int value, size_t left, size_t right)
  * @array: is a pointer to the first element of the array to search in
  * @size: is the number of elements in array
  * @value: is the value to search for
+ * Return: the result
  */
 int binary_search(int *array, size_t size, int value)
 {
