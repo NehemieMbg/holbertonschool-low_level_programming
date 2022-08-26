@@ -1,11 +1,8 @@
 #include "search_algos.h"
 
 /**
- * binary_search - function that searches for a value in a
- * sorted array of integers using the Binary search algorithm
+ * print - Function that print the value of the array
  * @array: is a pointer to the first element of the array to search in
- * @size: is the number of elements in array
- * @value: is the value to search for
  * @right: is the end of the array or the new end
  * which start at the previous middle
  * @left: is the beginning of the array or the new beginning
@@ -20,13 +17,23 @@ void print(int *array, size_t left, size_t right)
 		printf(" %d,", array[index]);
 	printf(" %d\n", array[index]);
 }
-
+/**
+ * binarySearch - function that searches for a value in a
+ * sorted array of integers using the Binary search algorithm
+ * @array: is a pointer to the first element of the array to search in
+ * @value: is the value to search for
+ * @right: is the end of the array or the new end
+ * which start at the previous middle
+ * @left: is the beginning of the array or the new beginning
+ * which start at the previous middle
+ */
 int binarySearch(int *array, int value, size_t left, size_t right)
 {
 	int mid;
 
 
-	if (left > right) return (-1);
+	if (left > right)
+		return (-1);
 
 	print(array, left, right);
 	mid = (left + right) / 2;
@@ -34,15 +41,22 @@ int binarySearch(int *array, int value, size_t left, size_t right)
 	if (array[mid] == value)
 		return (mid);
 	else if (array[mid] > value)
-		return binarySearch(array, value, left, mid - 1);
+		return (binarySearch(array, value, left, mid - 1));
 	else
-		return binarySearch(array, value, mid + 1, right);
+		return (binarySearch(array, value, mid + 1, right));
 }
 
+/**
+ * binary_search - function that searches for a value in a
+ * sorted array of integers using the Binary search algorithm
+ * @array: is a pointer to the first element of the array to search in
+ * @size: is the number of elements in array
+ * @value: is the value to search for
+ */
 int binary_search(int *array, size_t size, int value)
 {
 	if (!array || !size)
 		return (-1);
 
-	return binarySearch(array, value, 0, size - 1);
+	return (binarySearch(array, value, 0, size - 1));
 }
